@@ -1,0 +1,272 @@
+.container {
+    width: 85%; /* Largura relativa ao elemento pai */
+    max-width: 75rem; /* Largura máxima em rem */
+    margin: 0 auto; /* Centraliza o container */
+}
+
+
+
+/* Estilo do logotipo */
+.logo {
+    position: absolute; /* Posicionamento absoluto dentro do cabeçalho */
+    left: 3.125rem; /* Distância do lado esquerdo */
+}
+
+/* Estilo da imagem do logotipo */
+.logo img {
+    height: 2.5rem; /* Altura da imagem do logotipo */
+}
+
+
+
+/* Estilo da seção herói */
+.herosection {
+    text-align: center; /* Alinha o texto ao centro */
+    background-image: url('https://s3-alpha-sig.figma.com/img/b29f/6b0f/627f88a9028174eb1d309e8a3367207a?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mQOpMLHkiBk2MMu2Eaz6l3LTQZbt9WUS0IPQDCzD~m-dQoiN7-Oo0UKdOU3FgkCaWnITJv7h99CnVFmYMGNUnIXXoIFHQwb4uz32eizC0ZjIQkAd-W9ImqlVuc23M5dzioKWCfvgAN3PWvxZT8wWvbcHsyQIXmYmbq6aYig2kacpUBGPulEicKCXFLTms2TT8RUTon34NLmBIVm4nQnQZwKuK-mlApp3RZOgzVFcjsN4fcMqjCUSaJ6UDNAhHBaOZWUapt0tIq-CH1MGzVORQjgvZNv6mIdrdhdWbK5LkG-o6PXveGLvPcssrLO6kAd0p2vNbqi5LPB70sfQT-2Bqg__'); /* Imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    padding: 6.25rem 0; /* Espaçamento interno vertical */
+    position: relative; /* Necessário para o pseudoelemento ::after */
+}
+
+.herosection::after {
+    content: ''; /* Conteúdo do pseudoelemento ::after */
+    position: absolute; /* Posicionamento absoluto */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Largura total da seção */
+    height: 100%; /* Altura total da seção */
+    background-color: rgba(10, 14, 39, 0.7); /* Cor de fundo com opacidade */
+    z-index: 0; /* Coloca o pseudoelemento atrás do conteúdo */
+}
+
+.herosection .container {
+    position: relative; /* Necessário para sobrepor o pseudoelemento ::after */
+    z-index: 1; /* Garante que o conteúdo esteja acima do pseudoelemento */
+}
+
+.herosection h1 {
+    font-size: 2.5rem; /* Tamanho da fonte do título */
+    font-weight: 700; /* Peso da fonte */
+    color: #fff; /* Cor do título */
+    margin-bottom: 1.25rem; /* Margem inferior */
+}
+
+.herosection p {
+    font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
+    color: #fff; /* Cor do texto */
+    margin-bottom: 1.875rem; /* Margem inferior */
+}
+
+/* Estilo da seção de vantagens */
+.advantages {
+    display: flex; /* Usa flexbox para a disposição dos itens */
+    justify-content: center; /* Centraliza os itens */
+    gap: 1.25rem; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    margin-bottom: 4rem; /* Margem inferior */
+}
+
+.advantages span {
+    background-color:rgba(0,0,0,.9); /* Define a cor de fundo dos itens de vantagem */
+    padding: 0 1rem; /* Define o preenchimento dos itens (10px 20px) */
+    height: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem; /* Define o tamanho da fonte dos itens (16px) */
+    color: #fff; /* Define a cor do texto dos itens */
+    border-radius: 0.3125rem; /* Define o arredondamento das bordas dos itens (5px) */
+    cursor: pointer; /* Muda o cursor para indicar um item clicável */
+}
+
+.advantages span:hover {
+    background-color: #f38200; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo da seção de funcionalidades */
+.featuressection {
+    background-color: #111b38; /* Cor de fundo */
+    padding: 3.75rem 0; /* Espaçamento interno vertical */
+}
+
+.featuresGrid {
+    margin-bottom: -6rem; /* Margem negativa para ajustar o layout */
+    display: flex; /* Usa flexbox para a disposição dos itens */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    gap: 1.25rem; /* Espaçamento entre os itens */
+}
+
+.featureItem {
+    text-align: center; /* Alinha o texto ao centro */
+    max-width: 13.75rem; /* Largura máxima dos itens */
+}
+
+.featureItem p {
+    color: #c1c7d0; /* Cor do texto */
+    font-size: 0.9rem; /* Tamanho da fonte */
+}
+
+/* Estilo da seção sobre */
+.aboutSection {
+    background-color: #0a0e27;
+    padding: 5rem 0; /* Espaçamento interno vertical */
+}
+
+.aboutContent {
+    display: flex; /* Usa flexbox para a disposição dos itens */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    gap: 2.5rem; /* Espaçamento entre os itens */
+}
+
+.aboutText {
+    flex: 1; /* Permite que o elemento ocupe o espaço disponível */
+    min-width: 18.75rem; /* Largura mínima */
+    color: #e8ecf3; /* Cor do texto */
+}
+
+.aboutValues {
+    flex: 1; /* Permite que o elemento ocupe o espaço disponível */
+    min-width: 18.75rem; /* Largura mínima */
+    color: #e8ecf3; /* Cor do texto */
+    font-size: 0.9rem; /* Tamanho da fonte */
+}
+
+.aboutSection h2 {
+    font-size: 2rem; /* Tamanho da fonte do subtítulo */
+    font-weight: 700; /* Peso da fonte */
+    margin-bottom: 1.25rem; /* Margem inferior */
+    color: #e8ecf3; /* Cor do texto */
+}
+
+.aboutSection p {
+    margin-bottom: 1.25rem; /* Margem inferior */
+}
+
+/* Estilo do botão de chamada para ação */
+.ctaButton {
+    display: inline-block; /* Exibe o botão como bloco inline */
+    background-color: #ff6600; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 0.75rem 1.5625rem; /* Espaçamento interno */
+    border-radius: 1.5625rem; /* Arredondamento das bordas */
+    font-size: 0.9rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.ctaButton:hover {
+    background-color: #cc8619; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo da seção de detalhes das funcionalidades */
+.featuresDetails {
+    background-color: #111b38; /* Cor de fundo */
+    padding: 3.75rem 0; /* Espaçamento interno vertical */
+    color: #e8ecf3; /* Cor do text */
+}
+
+.detailsGrid {
+    display: flex; /* Usa flexbox para a disposição dos itens */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+    gap: 1.25rem; /* Espaçamento entre os itens */
+}
+
+.detailItem {
+    background-color: #0a0e27; /* Cor de fundo dos itens */
+    padding: 1.875rem; /* Espaçamento interno */
+    border-radius: 0.5rem; /* Arredondamento das bordas */
+    flex: 1; /* Permite que o elemento ocupe o espaço disponível */
+    min-width: 13.75rem; /* Largura mínima */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+.detailItem h3 {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    font-weight: 700; /* Peso da fonte */
+    margin-bottom: 0.625rem; /* Margem inferior */
+    color: #c1c7d0; /* Cor do texto */
+}
+
+.detailItem h4 {
+    font-size: 1rem; /* Tamanho da fonte do subtítulo */
+    font-weight: 400; /* Peso da fonte */
+    margin-bottom: 0.3125rem; /* Margem inferior */
+    color: #c1c7d0; /* Cor do texto */
+}
+
+.detailItem p {
+    color: #c1c7d0; /* Cor do texto */
+    font-size: 0.9rem; /* Tamanho da fonte */
+}
+
+/* Estilo da seção de planos */
+.plansSection {
+  padding: 50px 0;
+  background-color: #0a0e27;
+  text-align: center;
+  color: #c1c7d0; /* Cor do texto */
+}
+
+.planButton {
+    background-color: #ff6600; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 0.625rem 1.25rem; /* Espaçamento interno */
+    border-radius: 0.3125rem; /* Arredondamento das bordas */
+    cursor: pointer; /* Muda o cursor para indicar um botão clicável */
+    text-decoration: none; /* Remove o sublinhado */
+    display: block; /* Exibe o botão como bloco inline */
+    font-size: 1rem; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para a cor e transformação */
+    margin-top: 0.625rem; /* Margem superior */
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2); /* Sombra do botão */
+  }
+  
+  .planButton:hover {
+    background-color: #e75e03;
+  }
+
+.planButton:active {
+    background-color: #cc5200; /* Cor de fundo ao clicar */
+    transform: scale(0.95); /* Diminui o botão ao clicar */
+}
+
+.planButton:focus {
+    outline: 0.125rem solid #ff6600; /* Contorno ao focar o botão */
+    outline-offset: 0.125rem; /* Distância do contorno em relação ao botão */
+}
+
+.footer {
+    position: relative;
+}
+
+.footer-links a {
+    color: #f39c12; /* Define a cor do link no rodapé lateral */
+    text-decoration: none; /* Remove o sublinhado do link */
+    margin: 0 0.625rem; /* Define a margem lateral dos links (10px) */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+.keen-slider {
+    display: flex;
+    overflow: hidden;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .keen-slider__slide {
+    min-width: 100px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+  }
