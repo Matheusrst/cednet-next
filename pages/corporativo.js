@@ -1,56 +1,90 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 import styles from '../styles/corporativo.module.css';
+import { useRouter } from 'next/router';
+import '../styles/globals.css'; 
+
+const Header = () => {
+    const router = useRouter();
+
+    return (
+      <header className={styles.header}>
+      <div className={styles.container2}>
+          <div className={styles.logo}>
+              <a href="https://grupocednet.com.br/" target="_blank" rel="noopener noreferrer">
+                  <Image src="/images/logo.png" alt="Logo Cednet" width={200} height={60} />
+              </a>
+          </div>
+          <div className={styles.nav}>
+              <ul>
+                  <li>
+                      <Link href="/rural" className={router.pathname === '/rural' ? 'active' : ''}>Rural</Link>
+                  </li>
+                  <li>
+                      <Link href="/residencial" className={router.pathname === '/residencial' ? 'active' : ''}>Residencial</Link>
+                  </li>
+                  <li>
+                      <Link href="/corporativo" className={router.pathname === '/corporativo' ? 'active' : ''}>Corporativo</Link>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </header>
+    );
+};
 
 const Corporativo = () => {
     const [sliderRef] = useKeenSlider({
-      mode: "free-snap",
-      slides: {
-        perView: 1.5,
-        spacing: 10,
-      },
+        loop: true,
+        mode: "free-snap",
+        slides: {
+            perView: 4,
+            spacing: 30,
+        },
     });
 
     return (
-    <div>
-      {/* Seção de destaque */}
-      <div className={styles.herosection}>
-        <div className={styles.container}>
-          <h1>Conectividade Corporativa Incomparável</h1>
-          <p>A solução ideal para empresas que necessitam de velocidade, segurança e confiabilidade.</p>
-          <div className={styles.advantages}>
-            <span>Alta Velocidade</span>
-            <span>Segurança Avançada</span>
-            <span>Escalabilidade Flexível</span>
-            <span>Suporte Técnico 24/7</span>
-            <span>Conectividade Confiável</span>
-          </div>
-        </div>
-        <div className={styles.container}>
-          <div className={styles.featuresGrid}>
-            <div className={styles.featureItem}>
-              <Image src="/images/585e4bf3cb11b227491c339a.png" alt="Feature 1" width={100} height={100} />
-              <p>Lorem ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
+        <div className={styles.body}>
+            <Header />
+            {/* Seção de destaque */}
+            <div className={styles.herosection}>
+                <div className={styles.container}>
+                    <h1>Conectividade Corporativa Incomparável</h1>
+                    <p>A solução ideal para empresas que necessitam de velocidade, segurança e confiabilidade.</p>
+                    <div className={styles.advantages}>
+                        <span>Alta Velocidade</span>
+                        <span>Segurança Avançada</span>
+                        <span>Escalabilidade Flexível</span>
+                        <span>Suporte Técnico 24/7</span>
+                        <span>Conectividade Confiável</span>
+                    </div>
+                </div>
+                <div className={styles.container}>
+                    <div className={styles.featuresGrid}>
+                        <div className={styles.featureItem}>
+                            <Image src="/images/585e4bf3cb11b227491c339a.png" alt="Feature 1" width={100} height={100} />
+                            <p>Lorem ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
+                        </div>
+                        <div className={styles.featureItem}>
+                            <Image src="/images/585e4bf3cb11b227491c339a.png" alt="Feature 1" width={100} height={100} />
+                            <p>Lorem ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
+                        </div>
+                        <div className={styles.featureItem}>
+                            <Image src="/images/585e4bf3cb11b227491c339a.png" alt="Feature 1" width={100} height={100} />
+                            <p>Lorem ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
+                        </div>
+                        <div className={styles.featureItem}>
+                            <Image src="/images/585e4bf3cb11b227491c339a.png" alt="Feature 1" width={100} height={100} />
+                            <p>Lorem ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className={styles.featureItem}>
-              <Image src="/images/585e4bf3cb11b227491c339a.png" alt="Feature 1" width={100} height={100} />
-              <p>Lorem ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
-            </div>
-            <div className={styles.featureItem}>
-              <Image src="/images/585e4bf3cb11b227491c339a.png" alt="Feature 1" width={100} height={100} />
-              <p>Lorem ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
-            </div>
-            <div className={styles.featureItem}>
-              <Image src="/images/585e4bf3cb11b227491c339a.png" alt="Feature 1" width={100} height={100} />
-              <p>Lorem ipsum é um texto modelo da indústria tipográfica e de impressão.</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Seção Sobre */}
+             {/* Seção Sobre */}
       <div className={styles.aboutSection}>
         <div className={styles.container}>
           <h2>Conectando Empresas ao Futuro</h2>
@@ -101,49 +135,48 @@ const Corporativo = () => {
         </div>
       </div>
 
-      {/* Seção de Planos */}
-      <section className={styles.plansSection} id="plans">
-        <div className={styles.container}>
-          <h2>Escolha o Plano Perfeito para Sua Casa</h2>
-          <h4>Nossos planos foram desenvolvidos para atender a diferentes necessidades residenciais.</h4>
-          <div ref={sliderRef} className="keen-slider">
-            <div className="keen-slider__slide">
-              <Image src="/images/corporativo/essencial.webp" alt="Plano Essencial" width={300} height={450} />
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Essencial?" 
-                target="_blank" className={styles.planButton}>
-                Mais Informações
-              </a>
-            </div>
-            <div className="keen-slider__slide">
-              <Image src="/images/corporativo/elite.webp" alt="Plano Elite" width={300} height={450} />
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Elite?" 
-                target="_blank" className={styles.planButton}>
-                Mais Informações
-              </a>
-            </div>
-            <div className="keen-slider__slide">
-              <Image src="/images/corporativo/enterprise.webp" alt="Plano Enterprise" width={300} height={450} />
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Enterprise?" 
-                target="_blank" className={styles.planButton}>
-                Mais Informações
-              </a>
-            </div>
-            <div className="keen-slider__slide">
-              <Image src="/images/corporativo/vip-900megas.webp" alt="Plano VIP 900 Megas" width={300} height={450} />
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20VIP?" 
-                target="_blank" className={styles.planButton}>
-                Mais Informações
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <div class="container">
+            {/* Seção de Planos */}
+            <section className={styles.plansSection} id="plans">
+                <div className={styles.container}>
+                    <h2>Escolha o Plano Perfeito para Sua Casa</h2>
+                    <h4>Nossos planos foram desenvolvidos para atender a diferentes necessidades residenciais.</h4>
+                    <div ref={sliderRef} className="keen-slider">
+                        <div className="keen-slider__slide">
+                            <Image src="/images/corporativo/essencial.webp" alt="Plano Essencial" width={270} height={450} />
+                            <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Essencial?" 
+                               target="_blank" className={styles.planButton}>
+                                Mais Informações
+                            </a>
+                        </div>
+                        <div className="keen-slider__slide">
+                            <Image src="/images/corporativo/elite.webp" alt="Plano Elite" width={270} height={450} />
+                            <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Elite?" 
+                               target="_blank" className={styles.planButton}>
+                                Mais Informações
+                            </a>
+                        </div>
+                        <div className="keen-slider__slide">
+                            <Image src="/images/corporativo/enterprise.webp" alt="Plano Enterprise" width={270} height={450} />
+                            <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Enterprise?" 
+                               target="_blank" className={styles.planButton}>
+                                Mais Informações
+                            </a>
+                        </div>
+                        <div className="keen-slider__slide">
+                            <Image src="/images/corporativo/vip-900megas.webp" alt="Plano VIP 900 Megas" width={270} height={450} />
+                            <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20VIP%20900%20Megas?" 
+                               target="_blank" className={styles.planButton}>
+                                Mais Informações
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
             <div className={styles.footer}>
             <div class="footer-links">
-                <a href="https://api.whatsapp.com/send?phone=558001001101" target="_blank">Central de Atendimento 0800 1001 101</a>
-                <a href="https://grupocednet.com.br/politica-de-privacidade" target="_blank">Políticas de Privacidade</a>
+                <a href="https://api.whatsapp.com/send?phone=558001001101" target="_blank">Central de Atendimento 0800 1001 101 |</a>
+                <a href="https://grupocednet.com.br/politica-de-privacidade" target="_blank">| Políticas de Privacidade</a>
             </div>
             
             <p>COPYRIGHT © 2024, TODOS OS DIREITOS RESERVADOS. | CNPJ: 01.752.674/0001-54</p>
@@ -152,7 +185,7 @@ const Corporativo = () => {
             </div>
         </div>
     </div>
-  );
+    );
 };
 
 export default Corporativo;

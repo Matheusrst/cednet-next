@@ -1,22 +1,109 @@
+.body {
+    font-family: 'Montserrat', sans-serif; /* Define a fonte do corpo */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    color: #ffffff; /* Cor do texto */
+    background-color: #0a0e27; /* Cor de fundo */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
 .container {
     width: 85%; /* Largura relativa ao elemento pai */
     max-width: 75rem; /* Largura máxima em rem */
     margin: 0 auto; /* Centraliza o container */
 }
 
+.header {
+    background-color: #0b1f47; /* Cor de fundo do cabeçalho */
+    height: 7rem; /* Altura do cabeçalho */
+    display: flex; /* Usa flexbox para disposição dos itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    padding: 0 1.25rem; /* Espaçamento interno horizontal */
+    position: relative; /* Necessário para o logotipo */
+}
 
+.container2 {
+    display: flex; /* Usa flexbox para disposição dos itens dentro do container */
+    justify-content: space-between; /* Espaça o logotipo e a navegação */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 80%; /* Garante que o container ocupe toda a largura disponível */
+}
 
 /* Estilo do logotipo */
 .logo {
-    position: absolute; /* Posicionamento absoluto dentro do cabeçalho */
-    left: 3.125rem; /* Distância do lado esquerdo */
+    display: flex; /* Usa flexbox para o logotipo */
+    align-items: center; /* Centraliza verticalmente o logotipo */
+    margin-left: 5rem;
 }
 
 /* Estilo da imagem do logotipo */
 .logo img {
-    height: 2.5rem; /* Altura da imagem do logotipo */
+    left: 2.5rem;
 }
 
+/* Estilo da navegação */
+.nav {
+    flex: 1; /* Permite que a navegação ocupe o espaço disponível */
+    display: flex; /* Usa flexbox para a navegação */
+    justify-content: center; /* Centraliza a navegação horizontalmente */
+}
+
+.nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe os itens de navegação em linha */
+    justify-content: center; /* Centraliza os itens de navegação */
+    gap: 1.25rem; /* Adiciona um espaço entre os itens */
+    padding: 0; /* Remove o padding da lista */
+    margin: 0; /* Remove a margem da lista */
+}
+
+.nav ul li {
+    display: inline; /* Exibe os itens da lista em linha */
+}
+
+.nav ul li a {
+    color: #fff; /* Cor dos links na navegação */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: 500; /* Peso da fonte */
+    padding: 0.625rem 0.9375rem; /* Espaçamento interno dos links */
+    display: block; /* Exibe os links como blocos */
+    border-radius: 0.3125rem; /* Arredondamento das bordas */
+    transition: border-bottom 0.3s ease, color 0.3s ease; /* Transições suaves para efeitos de hover */
+    position: relative; /* Posicionamento relativo para o pseudoelemento ::after */
+}
+
+/* Estilo dos links da navegação */
+.nav a {
+    color: #ffffff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 1rem; /* Tamanho da fonte dos links */
+    font-weight: 600; /* Peso da fonte dos links */
+    position: relative; /* Necessário para o posicionamento da linha */
+}
+
+.nav ul li a:hover {
+    color: #f39c12; /* Muda a cor do texto dos links quando o mouse está sobre eles */
+}
+
+.nav a.active {
+    color: #f8a22f; /* Altere a cor do texto se desejado para o item ativo */
+}
+
+/* Linha abaixo do item ativo */
+.nav a.active::after {
+    content: ''; /* Cria um elemento vazio */
+    display: block; /* Faz com que o elemento ocupe uma linha inteira */
+    width: 100%; /* Largura da linha igual à do link */
+    height: 3px; /* Altura da linha */
+    background-color: #f8a22f; /* Cor da linha */
+    position: absolute; /* Posiciona a linha em relação ao link */
+    bottom: -5px; /* Posiciona a linha abaixo do link */
+    left: 0; /* Alinha a linha à esquerda do link */
+}
+
+.nav ul li a:hover::after {
+    width: 100%; /* Faz com que o pseudo-elemento ocupe 100% da largura do link quando o mouse está sobre ele */
+}
 
 
 /* Estilo da seção herói */
@@ -169,6 +256,12 @@
     color: #e8ecf3; /* Cor do text */
 }
 
+.detailItem h2 {
+    text-align: center; /* Centraliza o título */
+    font-size: 2em; /* Define o tamanho da fonte do título */
+    margin-bottom: 2.5rem; /* Adiciona margem inferior ao título */
+}
+
 .detailsGrid {
     display: flex; /* Usa flexbox para a disposição dos itens */
     justify-content: space-between; /* Espaçamento entre os itens */
@@ -183,6 +276,7 @@
     flex: 1; /* Permite que o elemento ocupe o espaço disponível */
     min-width: 13.75rem; /* Largura mínima */
     text-align: center; /* Alinha o texto ao centro */
+    width: 10rem;
 }
 
 .detailItem h3 {
@@ -212,37 +306,119 @@
   color: #c1c7d0; /* Cor do texto */
 }
 
+.plansSection h2 {
+    margin-bottom: 1rem; /* Espaçamento abaixo do título */
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    color: #c1c7d0; /* Cor do texto */
+}
+
+.plansSection h4 {
+    margin-bottom: 2rem; /* Espaçamento abaixo do subtítulo */
+    font-size: 1.1rem; /* Tamanho da fonte do subtítulo */
+    color: #c1c7d0; /* Cor do texto */
+}
+
 .planButton {
-    background-color: #ff6600; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto */
-    border: none; /* Remove a borda padrão */
-    padding: 0.625rem 1.25rem; /* Espaçamento interno */
-    border-radius: 0.3125rem; /* Arredondamento das bordas */
-    cursor: pointer; /* Muda o cursor para indicar um botão clicável */
-    text-decoration: none; /* Remove o sublinhado */
-    display: block; /* Exibe o botão como bloco inline */
-    font-size: 1rem; /* Tamanho da fonte */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para a cor e transformação */
-    margin-top: 0.625rem; /* Margem superior */
-    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2); /* Sombra do botão */
-  }
-  
-  .planButton:hover {
-    background-color: #e75e03;
-  }
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 0.625rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o texto do botão */
+}
+
+.planButton:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
+}
 
 .planButton:active {
-    background-color: #cc5200; /* Cor de fundo ao clicar */
-    transform: scale(0.95); /* Diminui o botão ao clicar */
+    background-color: #cc5200;
+    transform: scale(0.95);
 }
 
 .planButton:focus {
-    outline: 0.125rem solid #ff6600; /* Contorno ao focar o botão */
-    outline-offset: 0.125rem; /* Distância do contorno em relação ao botão */
+    outline: 0.125rem solid #ff6600;
+    outline-offset: 0.125rem;
 }
 
-.footer {
+/* Estilos para o container do Keen Slider */
+.keen-slider {
     position: relative;
+    width: 70%;
+    height: auto;
+    margin: -1rem auto;
+    padding: 40px 0;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.keen-slider__slide img {
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    max-width: 100%; /* Garante que a imagem não exceda o tamanho do slide */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para cada slide do Keen Slider */
+.keen-slider__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+}
+
+/* Estilos para o hover nos slides */
+.keen-slider__slide:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para o texto informativo dos planos */
+.plan-info {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Estilos para o Keen Slider no desktop */
+@media (min-width: 1024px) {
+    .keen-slider {
+        padding: 40px 0;
+    }
+
+    .keen-slider__slide {
+        margin: 0 10px;
+    }
+}
+
+/* Estilo do rodapé */
+.footer {
+    background-color: #0b1f47; /* Define a cor de fundo do rodapé */
+    padding: 1.25rem 0; /* Define o preenchimento superior e inferior do rodapé (20px) */
+    text-align: center; /* Centraliza o texto do rodapé */
+}
+
+.footer p {
+    color: #c1c7d0; /* Define a cor do texto do rodapé */
+    font-size: 0.9em; /* Define o tamanho da fonte do texto do rodapé */
+    margin-bottom: 0.3125rem; /* Define a margem inferior do texto do rodapé (5px) */
+}
+
+.footer a {
+    color: #f8a22f; /* Define a cor do link no rodapé */
+    font-size: 0.9em; /* Define o tamanho da fonte do link no rodapé */
+    font-weight: 600; /* Define o peso da fonte do link no rodapé */
+    text-decoration: underline; /* Define o sublinhado do link no rodapé */
 }
 
 .footer-links a {
@@ -254,19 +430,3 @@
 .footer-links a:hover {
     text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
-
-
-.keen-slider {
-    display: flex;
-    overflow: hidden;
-    padding: 20px;
-    gap: 10px;
-  }
-  
-  .keen-slider__slide {
-    min-width: 100px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-  }
