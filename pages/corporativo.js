@@ -138,8 +138,8 @@ const Corporativo = () => {
             {/* Seção de Planos */}
             <section className={styles.plansSection} id="plans">
                 <div className={styles.container}>
-                    <h2>Escolha o Plano Perfeito para Sua Casa</h2>
-                    <h4>Nossos planos foram desenvolvidos para atender a diferentes necessidades residenciais.</h4>
+                    <h2>Escolha o Plano Perfeito para Sua Empresa</h2>
+                    <h4>Nossos planos foram desenvolvidos para atender a diferentes necessidades Empresariais.</h4>
                     <div ref={sliderRef} className="keen-slider">
                         <div className="keen-slider__slide">
                             <Image src="/images/corporativo/essencial.webp" alt="Plano Essencial" width={270} height={450} />
