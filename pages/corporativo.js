@@ -41,8 +41,30 @@ const Corporativo = () => {
         loop: true,
         mode: "free-snap",
         slides: {
-            perView: 4,
-            spacing: 30,
+          perView: 4,
+          spacing: 30,
+        },
+        breakpoints: {
+          "(min-width: 768px)": {
+            slides: {
+              perView: 2,
+              spacing: 20,
+            },
+          },
+          "(min-width: 1024px)": {
+            slides: {
+              perView: 4,
+              spacing: 25,
+            },
+          },
+        },
+        navigation: {
+          nextEl: ".keen-slider__slide-next",
+          prevEl: ".keen-slider__slide-prev",
+        },
+        pagination: {
+          el: ".keen-slider__slide-pagination",
+          clickable: true,
         },
     });
 
