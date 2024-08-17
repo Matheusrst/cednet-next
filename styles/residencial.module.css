@@ -26,7 +26,7 @@
     display: flex; /* Usa flexbox para disposição dos itens dentro do container */
     justify-content: space-between; /* Espaça o logotipo e a navegação */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    width: 87%; /* Garante que o container ocupe toda a largura disponível */
+    width: 83%; /* Garante que o container ocupe toda a largura disponível */
 }
 
 /* Estilo do logotipo */
