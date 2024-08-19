@@ -58,19 +58,19 @@ export default function Residencial() {
         <div className={styles.container2}>
           <div className={styles.logo}>
             <a href="https://grupocednet.com.br/" target="_blank" rel="noopener noreferrer">
-              <Image src="/images/logo.png" alt="Logo Cednet" width={200} height={60} />
+              <Image src="/images/logo.png" alt="Logo Cednet" width={180} height={60} />
             </a>
           </div>
           <div className={styles.nav}>
             <ul>
               <li>
-                <Link href="/rural" className={router.pathname === '/rural' ? 'active' : ''}>Rural</Link>
+                <Link href="/rural" className={router.pathname === '/rural' ? styles.active : ''}>Rural</Link>
               </li>
               <li>
-                <Link href="/residencial" className={router.pathname === '/residencial' ? 'active' : ''}>Residencial</Link>
+                <Link href="/residencial" className={router.pathname === '/residencial' ? styles.active : ''}>Residencial</Link>
               </li>
               <li>
-                <Link href="/corporativo" className={router.pathname === '/corporativo' ? 'active' : ''}>Corporativo</Link>
+                <Link href="/corporativo" className={router.pathname === '/corporativo' ? styles.active : ''}>Corporativo</Link>
               </li>
             </ul>
           </div>
@@ -124,8 +124,8 @@ export default function Residencial() {
 
     <div className={styles.partnerLogos}>
             <div className={styles.partnerItem}>
-                <Image src="/images/residencial/Dizzer.png" alt="Dizzer" width={100} height={100} />
-                <p>Dizzer</p>
+                <Image src="/images/residencial/Dizzer.png" alt="Deezer" width={100} height={100} />
+                <p>Deezer</p>
             </div>
              <div className={styles.partnerItem}>
                 <Image src="/images/residencial/Looke.png" alt="Looke" width={100} height={100} />
@@ -213,8 +213,8 @@ export default function Residencial() {
       <footer className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.footerLinks}>
-            <a href="https://api.whatsapp.com/send?phone=558001001101" target="_blank">Central de Atendimento 0800 1001 101 |</a>
-            <a href="https://grupocednet.com.br/politica-de-privacidade" target="_blank">| Políticas de Privacidade</a>
+            <a href="https://api.whatsapp.com/send?phone=558001001101" target="_blank">Central de Atendimento 0800 1001 101</a>
+            <a href="https://grupocednet.com.br/politica-de-privacidade" target="_blank">Políticas de Privacidade</a>
           </div>
           <p>COPYRIGHT © 2024, TODOS OS DIREITOS RESERVADOS. | CNPJ: 01.752.674/0001-54</p>
           <Link href="https://github.com/Matheusrst" target="_blank">Por: Matheus Ribeiro</Link>

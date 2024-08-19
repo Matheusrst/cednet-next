@@ -1,16 +1,17 @@
+/* Estilos básicos do body */
 .body {
-    font-family: 'Montserrat', sans-serif; /* Define a fonte do corpo */
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o preenchimento padrão */
-    color: #ffffff; /* Cor do texto */
-    background-color: #0a0e27; /* Cor de fundo */
-    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    font-family: 'Open Sans', sans-serif; /* Fonte padrão do corpo */
+    line-height: 1.6; /* Altura da linha para legibilidade */
+    color: #fff; /* Cor do texto */
+    background-color: #1a1a1a; /* Cor de fundo */
 }
 
+/* Container centralizado */
 .container {
-    width: 85%; /* Largura relativa ao elemento pai */
-    max-width: 75rem; /* Largura máxima em rem */
-    margin: 0 auto; /* Centraliza o container */
+    width: 90%; /* Largura do container */
+    max-width: 75rem; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 0.03125rem; /* Padding muito pequeno */
 }
 
 .header {
@@ -105,44 +106,28 @@
     width: 100%; /* Faz com que o pseudo-elemento ocupe 100% da largura do link quando o mouse está sobre ele */
 }
 
-
-/* Estilo da seção herói */
-.herosection {
-    text-align: center; /* Alinha o texto ao centro */
-    background-image: url('https://s3-alpha-sig.figma.com/img/b29f/6b0f/627f88a9028174eb1d309e8a3367207a?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mQOpMLHkiBk2MMu2Eaz6l3LTQZbt9WUS0IPQDCzD~m-dQoiN7-Oo0UKdOU3FgkCaWnITJv7h99CnVFmYMGNUnIXXoIFHQwb4uz32eizC0ZjIQkAd-W9ImqlVuc23M5dzioKWCfvgAN3PWvxZT8wWvbcHsyQIXmYmbq6aYig2kacpUBGPulEicKCXFLTms2TT8RUTon34NLmBIVm4nQnQZwKuK-mlApp3RZOgzVFcjsN4fcMqjCUSaJ6UDNAhHBaOZWUapt0tIq-CH1MGzVORQjgvZNv6mIdrdhdWbK5LkG-o6PXveGLvPcssrLO6kAd0p2vNbqi5LPB70sfQT-2Bqg__'); /* Imagem de fundo */
-    background-size: cover; /* Faz a imagem cobrir toda a área */
+/* Seção Hero */
+.hero {
+    background-image: url('https://s3-alpha-sig.figma.com/img/ed8e/2c41/7bb4a99d8bbbe53c785fec3baaa22771?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k60EaryKYNo4HE3mLABg1XbvQo42t2azGjZn-eRQHyMyktAyay8~kevDicFPksCebZ61TyyerDZKYJH97uacE-LgGoLzwwVh-TftjllRFwREyOUC2S1vOR13JPy8Faj~2SKIE0WgPFd2E3ybZwDLwzMIN5T6lWldPFZO4vhkvxbV6d0adm4nT9Kd175Bsi2n5sPkNCch6Pf-fJBOMjMutodiWBMP0lA83uyp3XLMILckSLxSwKa0cDqJjJE2rpJZePJHFrf7~4h8dqncygsEzaMMkSq7fiIrGtF0ouKuHlfaIDDUhZpHD7pDQpoLkmB5zwEihIcjJhtuPll-7Q0~PQ__'); /* Define a imagem de fundo para a seção Hero */
+    background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
     background-position: center; /* Centraliza a imagem de fundo */
-    padding: 6.25rem 0; /* Espaçamento interno vertical */
-    position: relative; /* Necessário para o pseudoelemento ::after */
+    text-align: center; /* Centraliza o texto dentro da seção Hero */
+    padding: 6.25rem 0; /* Adiciona padding vertical à seção Hero */
+    margin-bottom: -2rem; /* Adiciona margem negativa na parte inferior */
 }
 
-.herosection::after {
-    content: ''; /* Conteúdo do pseudoelemento ::after */
-    position: absolute; /* Posicionamento absoluto */
-    top: 0; /* Alinha ao topo */
-    left: 0; /* Alinha à esquerda */
-    width: 100%; /* Largura total da seção */
-    height: 100%; /* Altura total da seção */
-    background-color: rgba(10, 14, 39, 0.7); /* Cor de fundo com opacidade */
-    z-index: 0; /* Coloca o pseudoelemento atrás do conteúdo */
+.hero h1 {
+    font-size: 2.5em; /* Define o tamanho da fonte do título */
+    margin-bottom: 1.25rem; /* Adiciona margem inferior ao título */
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto do título */
 }
 
-.herosection .container {
-    position: relative; /* Necessário para sobrepor o pseudoelemento ::after */
-    z-index: 1; /* Garante que o conteúdo esteja acima do pseudoelemento */
-}
-
-.herosection h1 {
-    font-size: 2.5rem; /* Tamanho da fonte do título */
-    font-weight: 700; /* Peso da fonte */
-    color: #fff; /* Cor do título */
-    margin-bottom: 1.25rem; /* Margem inferior */
-}
-
-.herosection p {
-    font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
-    color: #fff; /* Cor do texto */
-    margin-bottom: 1.875rem; /* Margem inferior */
+.hero p {
+    font-size: 1.2em; /* Define o tamanho da fonte do parágrafo */
+    max-width: 37.5rem; /* Define a largura máxima do parágrafo */
+    margin: 0 auto 1.875rem auto; /* Centraliza o parágrafo e adiciona margem inferior */
+    text-shadow: 0.062rem 0.062rem 0.187rem rgba(0, 0, 0, 0.5); /* Adiciona uma sombra ao texto do parágrafo */
+    margin-bottom: 1rem; /* Adiciona margem negativa na parte inferior */
 }
 
 /* Estilo da seção de vantagens */
@@ -171,13 +156,7 @@
     background-color: #f38200; /* Cor de fundo ao passar o mouse */
 }
 
-/* Estilo da seção de funcionalidades */
-.featuressection {
-    background-color: #111b38; /* Cor de fundo */
-    padding: 3.75rem 0; /* Espaçamento interno vertical */
-}
-
-.featuresGrid {
+.testimonialGrid {
     margin-bottom: -6rem; /* Margem negativa para ajustar o layout */
     display: flex; /* Usa flexbox para a disposição dos itens */
     justify-content: space-between; /* Espaçamento entre os itens */
@@ -185,137 +164,134 @@
     gap: 1.25rem; /* Espaçamento entre os itens */
 }
 
-.featureItem {
+.testimonialItem {
     text-align: center; /* Alinha o texto ao centro */
     max-width: 13.75rem; /* Largura máxima dos itens */
+    margin-bottom: 1.5rem;
 }
 
-.featureItem p {
+.testimonialItem p {
     color: #c1c7d0; /* Cor do texto */
     font-size: 0.9rem; /* Tamanho da fonte */
+    margin-top: 3px;
 }
 
-/* Estilo da seção sobre */
-.aboutSection {
-    background-color: #0a0e27;
-    padding: 5rem 0; /* Espaçamento interno vertical */
+/* Seção Mission */
+.mission {
+    background-image: url('https://s3-alpha-sig.figma.com/img/b8d1/783c/634258e574618f3b91ef939ca48c9565?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=drWZ0vdNGOq3aCohSflGvqF4DOReLHePYpkb3XzYDcuHemxg2vvN8wbryYtHqYJIgG4My386ifPCmonRdG38x8G8SByTxIIr5ZcdB7KhWnxbnAESpEj34BuglaBe70HHEborZXMtiFskmR-49oxFbetrjIYCroJXCZLRD2wX87jLaX071ftZkga3gBhEvBOfaoQfTEtjYhnZtkBNAXZoB4Qh2wX8DkGRlXX4ZabzGNYBOcI25vlFtA0XtOiP1lJdVgh4KRzxThWCRwD61tgc4FxXiSBavHdPMwUk8oyVZYX5leBcC2ncYNA3bTK9YERrkemuLsn1xLdW3MAVLlPxOw__'); /* Imagem de fundo */
+    background-size: cover; /* Cobre todo o elemento */
+    background-position: center; /* Centraliza imagem */
+    text-align: center; /* Centraliza texto */
+    padding: 6.25rem 0; /* Padding vertical */
 }
 
-.aboutContent {
-    display: flex; /* Usa flexbox para a disposição dos itens */
-    justify-content: space-between; /* Espaçamento entre os itens */
-    align-items: flex-start; /* Alinha os itens ao topo */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
-    gap: 2.5rem; /* Espaçamento entre os itens */
+/* Estilos para o título da seção Mission */
+.mission h2 {
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 2.5rem; /* Margem inferior */
 }
 
-.aboutText {
-    flex: 1; /* Permite que o elemento ocupe o espaço disponível */
-    min-width: 18.75rem; /* Largura mínima */
-    color: #e8ecf3; /* Cor do texto */
+/* Container de grid para a seção Mission */
+.missionGrid {
+    display: grid; /* Grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 2.5rem; /* Espaçamento entre itens */
+    max-width: 56.25rem; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-align: left; /* Alinha texto à esquerda */
 }
 
-.aboutValues {
-    flex: 1; /* Permite que o elemento ocupe o espaço disponível */
-    min-width: 18.75rem; /* Largura mínima */
-    color: #e8ecf3; /* Cor do texto */
-    font-size: 0.9rem; /* Tamanho da fonte */
+/* Estilos para os itens individuais na grid da seção Mission */
+.missionItem {
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo */
+    padding: 1.25rem; /* Padding */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    box-shadow: 0 0.125rem 0.312rem rgba(0, 0, 0, 0.3); /* Sombra */
+    color: #fff; /* Cor do texto */
 }
 
-.aboutSection h2 {
-    font-size: 2rem; /* Tamanho da fonte do subtítulo */
-    font-weight: 700; /* Peso da fonte */
-    margin-bottom: 1.25rem; /* Margem inferior */
-    color: #e8ecf3; /* Cor do texto */
+.Button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 0.625rem;
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    text-align: center; /* Centraliza o texto do botão */
 }
 
-.aboutSection p {
-    margin-bottom: 1.25rem; /* Margem inferior */
+.Button:hover {
+    background-color: #e65c00;
+    transform: scale(1.05);
 }
 
-/* Estilo do botão de chamada para ação */
-.ctaButton {
-    display: inline-block; /* Exibe o botão como bloco inline */
-    background-color: #ff6600; /* Cor de fundo */
-    color: #ffffff; /* Cor do texto */
-    padding: 0.75rem 1.5625rem; /* Espaçamento interno */
-    border-radius: 1.5625rem; /* Arredondamento das bordas */
-    font-size: 0.9rem; /* Tamanho da fonte */
-    font-weight: 600; /* Peso da fonte */
-    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+.Button:active {
+    background-color: #cc5200;
+    transform: scale(0.95);
 }
 
-.ctaButton:hover {
-    background-color: #cc8619; /* Cor de fundo ao passar o mouse */
+.Button:focus {
+    outline: 0.125rem solid #ff6600;
+    outline-offset: 0.125rem;
 }
 
-/* Estilo da seção de detalhes das funcionalidades */
-.featuresDetails {
-    background-color: #111b38; /* Cor de fundo */
-    padding: 3.75rem 0; /* Espaçamento interno vertical */
-    color: #e8ecf3; /* Cor do text */
+/* Seção Features */
+.features {
+    background-image: url('https://s3-alpha-sig.figma.com/img/5268/3522/eaf924bbec5c121d22599c37c5fd54b8?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UMOAXtY9U0V7x24qQ1mE1GP2IaFx2~ii~UQAo-fE7-Jq2WEL4JXqFHCgYY4GebTaNpiqvPNFMbI5GMaWh~m9lq6ws1aejjO7k9agA3HDAe71Fg3gcdHt4~nTE6QliV1tEKuAq3CCb4vOMz4pUlZj58PTADWxfP97BGORY-zX~xRmNGMLmyM0nqKPFQ-A78pfw3D2ODoiavTFlmArTkVPeMN4KhrSd-8M8OSeS6U22~77L0EBpGid96MiaAUzsV67mV4ptC8slCF9p6gE-4JXRP-XRuhQXMLoFE1vbJR~wReKg-XehuObvqAW6vfZ2KqSQXUcLleX5J313HVavL~QaA__'); /* Imagem de fundo */
+    background-size: cover; /* Cobre todo o elemento */
+    background-position: center; /* Centraliza imagem */
+    padding: 6.25rem 0; /* Padding vertical */
+    text-align: center; /* Centraliza texto */
 }
 
-.detailItem h2 {
-    text-align: center; /* Centraliza o título */
-    font-size: 2em; /* Define o tamanho da fonte do título */
-    margin-bottom: 2.5rem; /* Adiciona margem inferior ao título */
+.featuresGrid {
+    display: grid; /* Exibe os itens da grid */
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas de tamanho igual */
+    gap: 2.5rem; /* Adiciona um espaço entre os itens da grid */
+    max-width: 56.25rem; /* Define a largura máxima da grid */
+    margin: 0 auto; /* Centraliza a grid horizontalmente */
+    text-align: center; /* Alinha o texto dos itens da grid ao centro */
 }
 
-.detailsGrid {
-    display: flex; /* Usa flexbox para a disposição dos itens */
-    justify-content: space-between; /* Espaçamento entre os itens */
-    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
-    gap: 1.25rem; /* Espaçamento entre os itens */
+.features h2 {
+    font-size: 2.5em; /* Tamanho da fonte */
+    margin-bottom: 1.875rem; /* Margem inferior */
 }
 
-.detailItem {
-    background-color: #0a0e27; /* Cor de fundo dos itens */
-    padding: 1.875rem; /* Espaçamento interno */
-    border-radius: 0.5rem; /* Arredondamento das bordas */
-    flex: 1; /* Permite que o elemento ocupe o espaço disponível */
-    min-width: 13.75rem; /* Largura mínima */
-    text-align: center; /* Alinha o texto ao centro */
-    width: 10rem;
+.featureItem {
+    background-color: rgba(0, 0, 0, 0.7); /* Define a cor de fundo com transparência */
+    padding: 1.25rem; /* Adiciona padding aos itens */
+    border-radius: 0.5rem; /* Adiciona bordas arredondadas aos itens */
+    box-shadow: 0 0.125rem 0.312rem rgba(0, 0, 0, 0.3); /* Adiciona sombra aos itens */
 }
 
-.detailItem h3 {
-    font-size: 1.5rem; /* Tamanho da fonte do título */
-    font-weight: 700; /* Peso da fonte */
-    margin-bottom: 0.625rem; /* Margem inferior */
-    color: #c1c7d0; /* Cor do texto */
+.features .feature {
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding: 1.875rem; /* Padding */
+    margin: 1.25rem; /* Margem */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-.detailItem h4 {
-    font-size: 1rem; /* Tamanho da fonte do subtítulo */
-    font-weight: 400; /* Peso da fonte */
-    margin-bottom: 0.3125rem; /* Margem inferior */
-    color: #c1c7d0; /* Cor do texto */
+/* Seção Plans */
+.plans {
+    background-image: url('https://s3-alpha-sig.figma.com/img/4124/b91d/dfa98935e29ce938e9939c8f38313d4d?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hcDFRDzThuywIfygSe2FiAebsmKUWFOi3K5PGhXu7iA7MJiUELpEKXWtrFUCh3mD5YhRMBlyjY8W64fjsB7B295nRYTD7As048fvbbPsb2c4nJjVelIJ8Hj5j4N5DsRwsBTaWQZ8L3zAI0UoWEWiKMET8c6jwJE4ttht7fPDun5S6VtMnv4wLv7zSMWds79j3Vp0Z57GuFGXHNT9sEpZZWVcMzt0WjQESa1YpTDCCdDA3HYh~8U1O7nQqP~frWzDoaSmxsq76UtBc80PKfi4gKqzHBZvBaReU1SnvZgupsVUY30MnW9e~f5ZFR4rRSY7zD4E3hj8n1qgllg6fOvypQ__');
+    padding: 4rem 0; /* Padding vertical */
+    text-align: center; /* Centraliza texto */
+    padding: 3.75rem 0; /* Adiciona padding vertical à seção Plans */
 }
 
-.detailItem p {
-    color: #c1c7d0; /* Cor do texto */
-    font-size: 0.9rem; /* Tamanho da fonte */
-}
-
-/* Estilo da seção de planos */
-.plansSection {
-  padding: 50px 0;
-  background-color: #0a0e27;
-  text-align: center;
-  color: #c1c7d0; /* Cor do texto */
-}
-
-.plansSection h2 {
-    margin-bottom: 1rem; /* Espaçamento abaixo do título */
-    font-size: 1.5rem; /* Tamanho da fonte do título */
-    color: #c1c7d0; /* Cor do texto */
-}
-
-.plansSection h4 {
-    margin-bottom: 2rem; /* Espaçamento abaixo do subtítulo */
-    font-size: 1.1rem; /* Tamanho da fonte do subtítulo */
-    color: #c1c7d0; /* Cor do texto */
+.plans h4 {
+    margin-bottom: 1.2rem;
 }
 
 .planButton {
@@ -384,12 +360,6 @@
     transform: scale(1.05);
 }
 
-/* Estilos para o texto informativo dos planos */
-.plan-info {
-    margin-top: 15px;
-    text-align: center;
-}
-
 /* Estilos para o Keen Slider no desktop */
 @media (min-width: 1024px) {
     .keen-slider {
@@ -430,4 +400,3 @@
 .footerLinks a:hover {
     text-decoration: underline;
 }
-
