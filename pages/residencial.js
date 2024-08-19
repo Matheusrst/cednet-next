@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/router';
 import styles from '../styles/residencial.module.css'; // Importa o CSS Module
 import '../styles/globals.css';
+import "keen-slider/keen-slider.min.css";
 
 export default function Residencial() {
   const router = useRouter();

@@ -6,6 +6,7 @@ import Head from 'next/head';
 import Script from 'next/script'; // Importa o componente Script do Next.js
 import { useRouter } from 'next/router'; // Importa o hook useRouter
 import '../styles/globals.css'; 
+import "keen-slider/keen-slider.min.css";
 
 const Rural = () => {
   const router = useRouter(); // Obtém o objeto do roteador
