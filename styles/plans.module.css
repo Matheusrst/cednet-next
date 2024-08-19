@@ -45,6 +45,10 @@
     height: 60vh;
 }
 
+.spacing {
+    margin: 1rem 0;
+}
+
 .plansGrid {
     display: flex;
     justify-content: center;

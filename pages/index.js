@@ -30,6 +30,8 @@ export default function Home() {
         <div className={`${styles.container} ${styles.plansContent}`}>
           <h2>Escolha o Plano Perfeito para Sua Empresa</h2>
           <h4>Nossos planos foram desenvolvidos para atender a diferentes tamanhos e necessidades de cada pessoa.</h4>
+
+          <div className={styles.spacing}></div>
           <div className={styles.plansGrid}>
             <div className={styles.planItem}>
               <Link href="/rural">
