@@ -1,52 +1,53 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import Head from 'next/head';
-import { useEffect, useRef } from 'react';
-import { useRouter } from 'next/router';
-import styles from '../styles/residencial.module.css'; // Importa o CSS Module
-import '../styles/globals.css';
-import "keen-slider/keen-slider.min.css";
+import Image from 'next/image'; // Importa o componente Image do Next.js para otimizar o carregamento de imagens
+import Link from 'next/link'; // Importa o componente Link do Next.js para navegação
+import Head from 'next/head'; // Importa o componente Head do Next.js para manipulação do head do HTML
+import { useEffect, useRef } from 'react'; // Importa hooks do React
+import { useRouter } from 'next/router'; // Importa o hook useRouter do Next.js para navegação programática
+import styles from '../styles/residencial.module.css'; // Importa o CSS Module específico para a página
+import '../styles/globals.css'; // Importa o CSS global
+import "keen-slider/keen-slider.min.css"; // Importa o CSS do Keen Slider
 
 export default function Residencial() {
-  const router = useRouter();
-  const sliderRef = useRef(null);
+  const router = useRouter(); // Hook para acessar informações de roteamento
+  const sliderRef = useRef(null); // Ref para acessar o DOM do slider
 
   useEffect(() => {
-    const KeenSlider = require('keen-slider').default;
+    const KeenSlider = require('keen-slider').default; // Importa o Keen Slider dinamicamente
     
+    // Inicializa o Keen Slider se o sliderRef estiver definido
     if (sliderRef.current) {
       new KeenSlider(sliderRef.current, {
-        loop: true,
-        mode: "free-snap",
+        loop: true, // Permite a repetição do slider
+        mode: "free-snap", // Modo de deslizamento livre
         slides: {
-          perView: 4,
-          spacing: 30,
+          perView: 4, // Número de slides visíveis por vez
+          spacing: 30, // Espaçamento entre os slides
         },
         breakpoints: {
           "(min-width: 768px)": {
             slides: {
-              perView: 2,
-              spacing: 20,
+              perView: 2, // Ajusta o número de slides visíveis em telas maiores
+              spacing: 20, // Ajusta o espaçamento entre os slides em telas maiores
             },
           },
           "(min-width: 1024px)": {
             slides: {
-              perView: 4,
-              spacing: 25,
+              perView: 4, // Ajusta o número de slides visíveis em telas ainda maiores
+              spacing: 25, // Ajusta o espaçamento entre os slides em telas ainda maiores
             },
           },
         },
         navigation: {
-          nextEl: ".keen-slider__slide-next",
-          prevEl: ".keen-slider__slide-prev",
+          nextEl: ".keen-slider__slide-next", // Seleciona o botão de próximo slide
+          prevEl: ".keen-slider__slide-prev", // Seleciona o botão de slide anterior
         },
         pagination: {
-          el: ".keen-slider__slide-pagination",
-          clickable: true,
+          el: ".keen-slider__slide-pagination", // Seleciona o elemento de paginação
+          clickable: true, // Permite clicar na paginação para navegar entre os slides
         },
       });
     }
-  }, []);
+  }, []); // Executa o efeito apenas uma vez, após a montagem do componente
 
   return (
     <>
@@ -120,45 +121,45 @@ export default function Residencial() {
       </section>
 
       <section className={styles.partnersSection}>
-  <div className={styles.container}>
-    <h3>NÃO LEVAMOS SUA DIVERSÃO APENAS PARA O INSTAGRAM E FACEBOOK</h3>
+        <div className={styles.container}>
+          <h3>NÃO LEVAMOS SUA DIVERSÃO APENAS PARA O INSTAGRAM E FACEBOOK</h3>
 
-    <div className={styles.partnerLogos}>
+          <div className={styles.partnerLogos}>
             <div className={styles.partnerItem}>
-                <Image src="/images/residencial/Dizzer.png" alt="Deezer" width={100} height={100} />
-                <p>Deezer</p>
-            </div>
-             <div className={styles.partnerItem}>
-                <Image src="/images/residencial/Looke.png" alt="Looke" width={100} height={100} />
-                <p>Looke</p>
+              <Image src="/images/residencial/Dizzer.png" alt="Deezer" width={100} height={100} />
+              <p>Deezer</p>
             </div>
             <div className={styles.partnerItem}>
-                <Image src="/images/residencial/curtaon.png" alt="Curtaon" width={100} height={100} />
-                <p>Curtaon</p>
+              <Image src="/images/residencial/Looke.png" alt="Looke" width={100} height={100} />
+              <p>Looke</p>
             </div>
             <div className={styles.partnerItem}>
-                <Image src="/images/residencial/fuze.png" alt="Fuze Forge" width={100} height={100} />
-                <p>Fuze Forge</p>
-            </div>
-             <div className={styles.partnerItem}>
-                <Image src="/images/residencial/playkids.png" alt="PlayKids" width={100} height={100} />
-                <p>PlayKids</p>
+              <Image src="/images/residencial/curtaon.png" alt="Curtaon" width={100} height={100} />
+              <p>Curtaon</p>
             </div>
             <div className={styles.partnerItem}>
-                <Image src="/images/residencial/ciencia.png" alt="Clube de Ciências" width={100} height={100} />
-                <p>Clube de Ciências</p>
+              <Image src="/images/residencial/fuze.png" alt="Fuze Forge" width={100} height={100} />
+              <p>Fuze Forge</p>
             </div>
             <div className={styles.partnerItem}>
-                <Image src="/images/residencial/galinha.png" alt="Galinha Pintadinha" width={100} height={100} />
-                <p>Galinha Pintadinha</p>
+              <Image src="/images/residencial/playkids.png" alt="PlayKids" width={100} height={100} />
+              <p>PlayKids</p>
             </div>
             <div className={styles.partnerItem}>
-                <Image src="/images/residencial/zen.png" alt="Zen" width={100} height={100} />
-                <p>Zen</p>
+              <Image src="/images/residencial/ciencia.png" alt="Clube de Ciências" width={100} height={100} />
+              <p>Clube de Ciências</p>
             </div>
+            <div className={styles.partnerItem}>
+              <Image src="/images/residencial/galinha.png" alt="Galinha Pintadinha" width={100} height={100} />
+              <p>Galinha Pintadinha</p>
+            </div>
+            <div className={styles.partnerItem}>
+              <Image src="/images/residencial/zen.png" alt="Zen" width={100} height={100} />
+              <p>Zen</p>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
 
       <section className={styles.plansSection} id="plans">
         <div className={styles.container}>
