@@ -5,14 +5,15 @@ import styles from '../styles/rural.module.css'; // Importa o CSS Module especí
 import Head from 'next/head'; // Importa o componente Head do Next.js para manipulação do <head> do documento
 import Script from 'next/script'; // Importa o componente Script do Next.js para inclusão de scripts externos
 import { useRouter } from 'next/router'; // Importa o hook useRouter para acessar informações de navegação
-import '../styles/globals.css'; // Importa o CSS global para o projeto
 import "keen-slider/keen-slider.min.css"; // Importa o CSS do Keen Slider para estilização do carrossel
+import '../styles/globals.css'; // Importa o CSS global para o projeto
 
 const Rural = () => {
   const router = useRouter(); // Obtém o objeto do roteador para verificar a página atual
   const sliderRef = useRef(null); // Cria a referência para o slider do Keen Slider
 
   useEffect(() => {
+    const KeenSlider = require('keen-slider').default; // Importa o Keen Slider corretamente
     if (!sliderRef.current) return; // Verifica se a referência do slider é válida
 
     const slider = new KeenSlider(sliderRef.current, { // Inicializa o Keen Slider com configurações específicas
@@ -225,9 +226,10 @@ const Rural = () => {
         </div>
       </footer>
 
-      <Script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.js" strategy="beforeInteractive" /> {/* Inclui o script do Keen Slider antes da interação */}
+
+      <Script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.js" strategy="beforeInteractive"></Script> {/* Inclui o script do Keen Slider */}
     </>
   );
 };
 
-export default Rural; // Exporta o componente Rural
+export default Rural;
