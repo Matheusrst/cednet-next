@@ -296,116 +296,118 @@
       color: #c1c7d0; /* Cor do texto */
   }
   
-  .planButton {
-      background-color: #ff6600;
-      color: #fff;
-      border: none;
-      padding: 0.625rem 1.25rem;
-      border-radius: 0.3125rem;
-      cursor: pointer;
-      text-decoration: none;
-      display: block;
-      font-size: 1rem;
-      transition: background-color 0.3s, transform 0.3s;
-      margin-top: 0.625rem;
-      box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2);
-      width: 70%;
-      margin: 0 auto;
-      text-align: center; /* Centraliza o texto do botão */
-  }
-  
-  .planButton:hover {
-      background-color: #e65c00;
-      transform: scale(1.05);
-  }
-  
-  .planButton:active {
-      background-color: #cc5200;
-      transform: scale(0.95);
-  }
-  
-  .planButton:focus {
-      outline: 0.125rem solid #ff6600;
-      outline-offset: 0.125rem;
-  }
-  
-  /* Estilos para o container do Keen Slider */
-  .keen-slider {
-      position: relative;
-      width: 70%;
-      height: auto;
-      margin: -1rem auto;
-      padding: 40px 0;
-      padding-bottom: 60px;
-      overflow: hidden;
-  }
-  
-  .keen-slider__slide img {
-      display: block; /* Remove o espaço extra abaixo da imagem */
-      max-width: 100%; /* Garante que a imagem não exceda o tamanho do slide */
-      height: auto; /* Mantém a proporção da imagem */
-  }
-  
-  /* Estilos para cada slide do Keen Slider */
-  .keen-slider__slide {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 20px;
-      transition: transform 0.3s ease;
-      margin: 0 auto;
-  }
-  
-  /* Estilos para o hover nos slides */
-  .keen-slider__slide:hover {
-      transform: scale(1.05);
-  }
-  
-  /* Estilos para o texto informativo dos planos */
-  .plan-info {
-      margin-top: 15px;
-      text-align: center;
-  }
-  
-  /* Estilos para o Keen Slider no desktop */
-  @media (min-width: 1024px) {
-      .keen-slider {
-          padding: 40px 0;
-      }
-  
-      .keen-slider__slide {
-          margin: 0 10px;
-      }
-  }
+ /* Estilo do botão de planos */
+.planButton {
+    background-color: #ff6600; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 0.625rem 1.25rem; /* Espaçamento interno do botão (vertical e horizontal) */
+    border-radius: 0.3125rem; /* Arredondamento das bordas do botão */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    text-decoration: none; /* Remove o sublinhado do texto do botão */
+    display: block; /* Faz o botão ocupar toda a largura disponível */
+    font-size: 1rem; /* Tamanho da fonte do texto do botão */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves para cor de fundo e transformação */
+    margin-top: 0.625rem; /* Margem superior do botão */
+    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.2); /* Sombra do botão para efeito de elevação */
+    width: 70%; /* Largura do botão como uma porcentagem do contêiner pai */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do botão */
+}
+
+.planButton:hover {
+    background-color: #e65c00; /* Cor de fundo do botão ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+
+.planButton:active {
+    background-color: #cc5200; /* Cor de fundo do botão quando pressionado */
+    transform: scale(0.95); /* Reduz o tamanho do botão quando pressionado */
+}
+
+.planButton:focus {
+    outline: 0.125rem solid #ff6600; /* Adiciona uma borda ao redor do botão quando ele está em foco */
+    outline-offset: 0.125rem; /* Distância da borda de foco em relação ao botão */
+}
+
+/* Estilos para o container do Keen Slider */
+.keen-slider {
+    position: relative; /* Necessário para posicionar os slides dentro do container */
+    width: 70%; /* Largura do container do slider */
+    height: auto; /* Altura ajustável conforme o conteúdo */
+    margin: -1rem auto; /* Margem superior negativa para ajustar o layout */
+    padding: 40px 0; /* Espaçamento interno superior e inferior */
+    padding-bottom: 60px; /* Espaçamento interno inferior adicional */
+    overflow: hidden; /* Oculta o conteúdo que ultrapassa os limites do container */
+}
+
+.keen-slider__slide img {
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    max-width: 100%; /* Garante que a imagem não exceda o tamanho do slide */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilos para cada slide do Keen Slider */
+.keen-slider__slide {
+    display: flex; /* Usa flexbox para a disposição dos itens no slide */
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: flex-start; /* Alinha os itens ao topo do slide */
+    padding: 20px; /* Espaçamento interno do slide */
+    transition: transform 0.3s ease; /* Transição suave para a transformação do slide */
+    margin: 0 auto; /* Centraliza o slide horizontalmente */
+}
+
+/* Estilos para o hover nos slides */
+.keen-slider__slide:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do slide ao passar o mouse */
+}
+
+/* Estilos para o texto informativo dos planos */
+.plan-info {
+    margin-top: 15px; /* Margem superior do texto informativo */
+    text-align: center; /* Centraliza o texto informativo */
+}
+
+/* Estilos para o Keen Slider no desktop */
+@media (min-width: 1024px) {
+    .keen-slider {
+        padding: 40px 0; /* Ajusta o espaçamento interno superior e inferior no desktop */
+    }
+
+    .keen-slider__slide {
+        margin: 0 10px; /* Espaço horizontal entre os slides no desktop */
+    }
+}
+
 
 /* Estilo do rodapé */
 .footer {
-    background-color: #0b1f47;
-    padding: 1.25rem 0;
-    text-align: center;
+    background-color: #0b1f47; /* Cor de fundo do rodapé */
+    padding: 1.25rem 0; /* Espaçamento interno vertical */
+    text-align: center; /* Centraliza o texto */
 }
 
 .footer p {
-    color: #c1c7d0;
-    font-size: 0.9em;
-    margin-bottom: 0.3125rem;
+    color: #c1c7d0; /* Cor do texto do rodapé */
+    font-size: 0.9em; /* Tamanho da fonte do texto */
+    margin-bottom: 0.3125rem; /* Margem inferior do texto */
 }
 
 .footer a {
-    color: #f8a22f;
-    font-size: 0.9em;
-    font-weight: 600;
-    text-decoration: underline;
+    color: #f8a22f; /* Cor dos links no rodapé */
+    font-size: 0.9em; /* Tamanho da fonte dos links */
+    font-weight: 600; /* Peso da fonte dos links */
+    text-decoration: underline; /* Sublinhado dos links */
 }
 
 .footerLinks a {
-    color: #f39c12;
-    text-decoration: none;
-    margin: 0 0.625rem;
+    color: #f39c12; /* Cor dos links na seção de links do rodapé */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 0.625rem; /* Espaço horizontal entre os links */
 }
 
 .footerLinks a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Sublinhado dos links ao passar o mouse */
 }
 
