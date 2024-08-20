@@ -21,7 +21,7 @@ export default function Residencial() {
         mode: "free-snap", // Modo de deslizamento livre
         slides: {
           perView: 4, // Número de slides visíveis por vez
-          spacing: 30, // Espaçamento entre os slides
+          spacing: 50, // Espaçamento entre os slides
         },
         breakpoints: {
           "(min-width: 768px)": {
@@ -167,28 +167,28 @@ export default function Residencial() {
           <h4>Nossos planos foram desenvolvidos para atender a diferentes necessidades Empresariais.</h4>
           <div ref={sliderRef} className="keen-slider">
             <div className="keen-slider__slide">
-              <Image src="/images/residencial/Para-Todos.webp" alt="Plano Para-Todos" width={270} height={450} />
+              <Image src="/images/residencial/Para-Todos.webp" alt="Plano Para-Todos" width={250} height={450} />
               <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Para%20Todos?" 
                  target="_blank" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
-              <Image src="/images/residencial/Ideal.webp" alt="Plano Ideal" width={270} height={450} />
+              <Image src="/images/residencial/Ideal.webp" alt="Plano Ideal" width={250} height={450} />
               <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Ideal?" 
                  target="_blank" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
-              <Image src="/images/residencial/Familia.webp" alt="Plano Familia" width={270} height={450} />
+              <Image src="/images/residencial/Familia.webp" alt="Plano Familia" width={250} height={450} />
               <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Familia?" 
                  target="_blank" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
-              <Image src="/images/residencial/Gamer.webp" alt="Plano Gamer" width={270} height={450} />
+              <Image src="/images/residencial/Gamer.webp" alt="Plano Gamer" width={250} height={450} />
               <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Gamer?" 
                  target="_blank" className={styles.planButton}>
                 Mais Informações

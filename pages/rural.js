@@ -21,7 +21,7 @@ const Rural = () => {
       mode: "free-snap", // Configura o modo de rotação livre
       slides: {
         perView: 4, // Número de slides exibidos por vez
-        spacing: 30, // Espaçamento entre slides
+        spacing: 50, // Espaçamento entre slides
       },
       breakpoints: { // Configurações responsivas para diferentes tamanhos de tela
         "(min-width: 768px)": {
@@ -163,35 +163,35 @@ const Rural = () => {
               </a>
             </div>
             <div className="keen-slider__slide">
-              <Image src="/images/rural/corp-rural1.webp" alt="combo 1 corp" width={270} height={450} /> {/* Imagem do plano 1 Corporativo */}
+              <Image src="/images/rural/corp-rural1.webp" alt="combo 1 corp" width={250} height={450} /> {/* Imagem do plano 1 Corporativo */}
               <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Rural%20Corp%201?" 
                  target="_blank" rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
-              <Image src="/images/rural/res-rural-2.webp" alt="combo 2 res" width={270} height={450} /> {/* Imagem do plano 2 */}
+              <Image src="/images/rural/res-rural-2.webp" alt="combo 2 res" width={250} height={450} /> {/* Imagem do plano 2 */}
               <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Combo%202?" 
                  target="_blank" rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
-              <Image src="/images/rural/corp-rural2.webp" alt="combo 2 corp" width={270} height={450} /> {/* Imagem do plano 2 Corporativo */}
+              <Image src="/images/rural/corp-rural2.webp" alt="combo 2 corp" width={250} height={450} /> {/* Imagem do plano 2 Corporativo */}
               <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Rural%20Corp%202?" 
                  target="_blank" rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
-              <Image src="/images/rural/res-rural-3.webp" alt="combo 3 res" width={270} height={450} /> {/* Imagem do plano 3 */}
+              <Image src="/images/rural/res-rural-3.webp" alt="combo 3 res" width={250} height={450} /> {/* Imagem do plano 3 */}
               <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Combo%203?" 
                  target="_blank" rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
-              <Image src="/images/rural/corp-rural3.webp" alt="combo 3 corp" width={270} height={450} /> {/* Imagem do plano 3 Corporativo */}
+              <Image src="/images/rural/corp-rural3.webp" alt="combo 3 corp" width={250} height={450} /> {/* Imagem do plano 3 Corporativo */}
               <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Rural%20Corp%203?" 
                  target="_blank" rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações

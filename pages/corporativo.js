@@ -47,7 +47,7 @@ const Corporativo = () => {
         mode: "free-snap", // Modo de rotação livre com ajuste automático
         slides: {
           perView: 4, // Número de slides visíveis por vez
-          spacing: 30, // Espaçamento entre slides
+          spacing: 50, // Espaçamento entre slides
         },
         breakpoints: {
           "(min-width: 768px)": {
@@ -176,28 +176,28 @@ const Corporativo = () => {
                     <div ref={sliderRef} className="keen-slider">
                         {/* Slides dos planos com link para mais informações */}
                         <div className="keen-slider__slide">
-                            <Image src="/images/corporativo/essencial.webp" alt="Plano Essencial" width={270} height={450} />
+                            <Image src="/images/corporativo/essencial.webp" alt="Plano Essencial" width={250} height={450} />
                             <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Essencial?" 
                                target="_blank" className={styles.planButton}>
                                 Mais Informações
                             </a>
                         </div>
                         <div className="keen-slider__slide">
-                            <Image src="/images/corporativo/elite.webp" alt="Plano Elite" width={270} height={450} />
+                            <Image src="/images/corporativo/elite.webp" alt="Plano Elite" width={250} height={450} />
                             <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Elite?" 
                                target="_blank" className={styles.planButton}>
                                 Mais Informações
                             </a>
                         </div>
                         <div className="keen-slider__slide">
-                            <Image src="/images/corporativo/enterprise.webp" alt="Plano Enterprise" width={270} height={450} />
+                            <Image src="/images/corporativo/enterprise.webp" alt="Plano Enterprise" width={250} height={450} />
                             <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Enterprise?" 
                                target="_blank" className={styles.planButton}>
                                 Mais Informações
                             </a>
                         </div>
                         <div className="keen-slider__slide">
-                            <Image src="/images/corporativo/vip-900megas.webp" alt="Plano VIP 900 Megas" width={270} height={450} />
+                            <Image src="/images/corporativo/vip-900megas.webp" alt="Plano VIP 900 Megas" width={250} height={450} />
                             <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20VIP%20900%20Megas?" 
                                target="_blank" className={styles.planButton}>
                                 Mais Informações
