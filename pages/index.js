@@ -35,7 +35,7 @@ export default function Home() {
         <main className={styles.plansSection}> {/* Seção principal da página com os planos */}
           <div className={`${styles.container} ${styles.plansContent}`}>
             {/* Título e descrição dos planos */}
-            <h2>Escolha o Plano Perfeito para Sua Empresa</h2>
+            <h2>Conectando você Do Campo Até sua Empresa</h2>
             <h4>Nossos planos foram desenvolvidos para atender a diferentes tamanhos e necessidades de cada pessoa.</h4>
 
             <div className={styles.spacing}></div> {/* Espaçamento entre os elementos */}
