@@ -285,15 +285,18 @@
   }
   
   .plansSection h2 {
-      margin-bottom: 1rem; /* Espaçamento abaixo do título */
-      font-size: 1.5rem; /* Tamanho da fonte do título */
-      color: #c1c7d0; /* Cor do texto */
+    color: #ffffff; /* Define a cor do título */
+    font-size: 2em; /* Define o tamanho da fonte do título */
+    font-weight: bold; /* Define o peso da fonte do título */
+    margin-bottom: 0.9375rem; /* Define a margem inferior do título (15px) */
+    text-transform: uppercase; /* Define o texto em maiúsculas */
   }
   
   .plansSection h4 {
-      margin-bottom: 2rem; /* Espaçamento abaixo do subtítulo */
-      font-size: 1.1rem; /* Tamanho da fonte do subtítulo */
-      color: #c1c7d0; /* Cor do texto */
+    color: #c1c7d0; /* Define a cor do subtítulo */
+    font-size: 1.2em; /* Define o tamanho da fonte do subtítulo */
+    font-weight: normal; /* Define o peso da fonte do subtítulo */
+    margin-bottom: 3.125rem; /* Define a margem inferior do subtítulo (50px) */
   }
   
  /* Estilo do botão de planos */
@@ -316,7 +319,7 @@
 }
 
 .planButton:hover {
-    background-color: #e65c00; /* Cor de fundo do botão ao passar o mouse */
+    background-color: #ca5100; /* Cor de fundo do botão ao passar o mouse */
     transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
 }
 

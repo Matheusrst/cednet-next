@@ -246,7 +246,7 @@
 }
 
 .ctaButton:hover {
-    background-color: #cc8619; /* Cor de fundo ao passar o mouse */
+    background-color: #ca5100; /* Cor de fundo ao passar o mouse */
 }
 
 /* Estilo da seção de detalhes das funcionalidades */
@@ -263,6 +263,7 @@
 }
 
 .detailsGrid {
+    margin-top: .8rem;
     display: flex; /* Usa flexbox para a disposição dos itens */
     justify-content: space-between; /* Espaçamento entre os itens */
     flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
@@ -283,7 +284,7 @@
     font-size: 1.5rem; /* Tamanho da fonte do título */
     font-weight: 700; /* Peso da fonte */
     margin-bottom: 0.625rem; /* Margem inferior */
-    color: #c1c7d0; /* Cor do texto */
+    color: #ffffff; /* Cor do texto */
 }
 
 .detailItem h4 {
@@ -309,13 +310,13 @@
 .plansSection h2 {
     margin-bottom: 1rem; /* Espaçamento abaixo do título */
     font-size: 1.5rem; /* Tamanho da fonte do título */
-    color: #c1c7d0; /* Cor do texto */
+    color: #ffffff; /* Cor do texto */
 }
 
 .plansSection h4 {
     margin-bottom: 2rem; /* Espaçamento abaixo do subtítulo */
     font-size: 1.1rem; /* Tamanho da fonte do subtítulo */
-    color: #c1c7d0; /* Cor do texto */
+    color: #ffffff; /* Cor do texto */
 }
 
 .planButton {
@@ -337,7 +338,7 @@
 }
 
 .planButton:hover {
-    background-color: #e65c00; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #ca5100; /* Muda a cor de fundo ao passar o mouse */
     transform: scale(1.05); /* Aumenta o botão ligeiramente ao passar o mouse */
 }
 

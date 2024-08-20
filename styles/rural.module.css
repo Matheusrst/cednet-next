@@ -232,7 +232,7 @@
 
 /* Estilos para o botão quando o mouse está sobre ele */
 .Button:hover {
-    background-color: #e65c00; /* Cor de fundo ao passar o mouse */
+    background-color: #ca5100; /* Cor de fundo ao passar o mouse */
     transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
 }
 
@@ -320,7 +320,7 @@
 
 /* Estilos para o botão de plano quando o mouse está sobre ele */
 .planButton:hover {
-    background-color: #e65c00; /* Cor de fundo ao passar o mouse */
+    background-color: #ca5100; /* Cor de fundo ao passar o mouse */
     transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
 }
 
