@@ -78,8 +78,6 @@ const Corporativo = () => {
         <>
             <Head>
                 <title>Corporativo | Grupo Cednet</title>
-                <meta name="description" content="Descubra as soluções corporativas de conectividade oferecidas pelo Grupo Cednet para empresas de todos os tamanhos." />
-                <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
