@@ -14,7 +14,7 @@ export default function Home() {
           {/* Configura a viewport para garantir responsividade em dispositivos móveis */}
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           {/* Título da página exibido na aba do navegador */}
-          <title>Grupo Cednet - Conectividade Corporativa</title>
+          <title>Grupo Cednet - Conectado A Você</title>
           {/* Link para o arquivo CSS específico da página */}
           <link rel="stylesheet" href="/css/home-style.css" />
           {/* Importa fontes do Google Fonts */}
