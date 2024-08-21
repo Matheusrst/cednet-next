@@ -3,7 +3,7 @@ Este projeto é uma página web desenvolvida para o **Grupo Cednet**, focada na 
 Oprojeto é construída utilizando **Next.js**, um popular framework React para desenvolvimento de aplicações web otimizadas e de alto desempenho. Ela também faz uso de **Keen Slider**, uma biblioteca de carrossel de slides, para exibir de forma interativa os planos de internet disponíveis.
 
 
-Página de Planos do Grupo Cednet
+**PÁGINAS DE PLANOS DO GRUPO CEDNET**
 Este repositório contém o código-fonte das páginas web "index", "Corporativa", "Residencial" e "Rural do Grupo Cednet, desenvolvida para promover os serviços de internet de alta velocidade. As páginas foram construídas utilizando Next.js e diversas tecnologias modernas de front-end para garantir uma experiência de usuário rápida, responsiva e interativa.
 
 Visão Geral
