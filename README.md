@@ -75,7 +75,7 @@ bash
 npm run dev
 Acesse http://localhost:3000 para visualizar o projeto em execução.
 
-##Links Úteis
+## Links Úteis
 
 Grupo Cednet: https://grupocednet.com.br/ 
 
@@ -83,8 +83,8 @@ Políticas de Privacidade: https://grupocednet.com.br/politica-de-privacidade
 
 Perfil do Desenvolvedor: https://github.com/Matheusrst
 
-##Contribuições
+## Contribuições
 Se você gostaria de contribuir para este projeto, por favor, faça um fork do repositório e envie um pull request com suas alterações.
 
-##Licença 
+## Licença 
 COPYRIGHT © 2024, TODOS OS DIREITOS RESERVADOS. | CNPJ: 01.752.674/0001-54
