@@ -222,7 +222,8 @@ const Rural = () => {
             <a href="https://grupocednet.com.br/politica-de-privacidade" target="_blank" rel="noopener noreferrer">Políticas de Privacidade</a> {/* Link para a política de privacidade */}
           </div>
           <p>COPYRIGHT © 2024, TODOS OS DIREITOS RESERVADOS. | CNPJ: 01.752.674/0001-54</p> {/* Informações de copyright */}
-          <Link href="https://github.com/Matheusrst" target="_blank" rel="noopener noreferrer">Por: Matheus Ribeiro</Link> {/* Link para o perfil do desenvolvedor */}
+          <Link href="mailto:matheusriberomatheus@gmail.com" target="_blank" rel="noopener noreferrer">Por: Matheus Ribeiro</Link> {/* Link para o perfil do desenvolvedor */}
+          {/*<Link href="https://github.com/Matheusrst" target="_blank" rel="noopener noreferrer"></Link> */}
         </div>
       </footer>
 

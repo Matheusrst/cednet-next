@@ -93,7 +93,8 @@ export default function Home() {
             {/* Informações de copyright e CNPJ */}
             <p>COPYRIGHT © 2024, TODOS OS DIREITOS RESERVADOS. | CNPJ: 01.752.674/0001-54</p>
             {/* Link para o perfil do desenvolvedor */}
-            <Link href="https://github.com/Matheusrst" target="_blank" rel="noopener noreferrer">
+            <Link href="mailto:matheusriberomatheus@gmail.com" target="_blank" rel="noopener noreferrer">
+            {/*<Link href="https://github.com/Matheusrst" target="_blank" rel="noopener noreferrer"></Link> */}
               Por: Matheus Ribeiro
             </Link>
           </div>
