@@ -76,10 +76,9 @@ npm run dev
 Acesse http://localhost:3000 para visualizar o projeto em execução.
 
 Links Úteis
-Grupo Cednet
-Central de Atendimento 0800 1001 101
-Políticas de Privacidade
-Perfil do Desenvolvedor
+Grupo Cednet: https://grupocednet.com.br/
+Políticas de Privacidade: https://grupocednet.com.br/politica-de-privacidade
+Perfil do Desenvolvedor: https://github.com/Matheusrst
 
 Contribuições
 Se você gostaria de contribuir para este projeto, por favor, faça um fork do repositório e envie um pull request com suas alterações.
