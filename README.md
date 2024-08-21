@@ -1,4 +1,3 @@
-markdown
 # Projeto Grupo Cednet
 
 Bem-vindo ao projeto do Grupo Cednet! Este projeto utiliza Next.js para criar uma aplicação de internet com diferentes páginas e funcionalidades para promover a conectividade em diferentes contextos. O projeto inclui páginas para planos rurais, residenciais e corporativos, com seções destacadas, carrosséis interativos e um design responsivo.
@@ -37,8 +36,15 @@ Bem-vindo ao projeto do Grupo Cednet! Este projeto utiliza Next.js para criar um
 
 ## Estrutura dos Arquivos
 
+- **`pages/`**: Contém todos os arquivos .js utilizados na aplicação
+  - `_app.js`
+  - `corporativo.js`
+  - `index.js`
+  - `residencial.js`
+  - `rural.js` 
+
 - **`styles/`**: Contém os arquivos CSS específicos para as páginas e estilos globais.
-  - `index.module.css`
+  - `plans.module.css`
   - `rural.module.css`
   - `residencial.module.css`
   - `corporativo.module.css`
@@ -48,6 +54,15 @@ Bem-vindo ao projeto do Grupo Cednet! Este projeto utiliza Next.js para criar um
   - `logo.png`
   - `plans/` (imagens dos planos)
   - `corporativo/` (imagens específicas para a página corporativa)
+  - `residencial/` (imagens especificas para a página residencial)
+  - `rural/` (imagens especificas para a página rural)
+
+## Clonar Repositorio 
+bash
+git clone https://github.com/matheusrst/cednet-residencial.git 
+cd cednet-residencial 
+Instale as dependências:
+
 
 ## Como Rodar o Projeto
 
@@ -57,7 +72,6 @@ Bem-vindo ao projeto do Grupo Cednet! Este projeto utiliza Next.js para criar um
 Rodar o Servidor de Desenvolvimento
 
 bash
-Copiar código
 npm run dev
 Acesse http://localhost:3000 para visualizar o projeto em execução.
 
@@ -66,5 +80,9 @@ Grupo Cednet
 Central de Atendimento 0800 1001 101
 Políticas de Privacidade
 Perfil do Desenvolvedor
+
 Contribuições
 Se você gostaria de contribuir para este projeto, por favor, faça um fork do repositório e envie um pull request com suas alterações.
+
+Licença 
+COPYRIGHT © 2024, TODOS OS DIREITOS RESERVADOS. | CNPJ: 01.752.674/0001-54
