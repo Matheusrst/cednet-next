@@ -1,7 +1,7 @@
 import Head from 'next/head'; // Importa o componente Head para manipular o conteúdo do <head> do documento HTML
 import Image from 'next/image'; // Importa o componente Image para otimizar e renderizar imagens
 import Link from 'next/link'; // Importa o componente Link para navegação interna
-import styles from '../styles/plans.module.css'; // Importa os estilos específicos para a página de planos
+import styles from '../styles/index-plans.module.css'; // Importa os estilos específicos para a página de planos
 import '../styles/globals.css'; // Importa os estilos globais da aplicação
 
 export default function Home() {
