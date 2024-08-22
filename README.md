@@ -85,8 +85,5 @@ Políticas de Privacidade: https://grupocednet.com.br/politica-de-privacidade
 
 Perfil do Desenvolvedor: https://github.com/Matheusrst
 
-## Contribuições
-Se você gostaria de contribuir para este projeto, por favor, faça um fork do repositório e envie um pull request com suas alterações.
-
 ## Licença 
 COPYRIGHT © 2024, TODOS OS DIREITOS RESERVADOS. | CNPJ: 01.752.674/0001-54
