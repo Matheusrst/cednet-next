@@ -63,10 +63,13 @@ Clone o repositório:
  ```bash
 git clone https://github.com/seu-usuario/cednet-residencial.git
 cd cednet-residencial
-
-bash
+```
 Instale as dependências:
-
+```bash
+npm install
+# ou
+yarn install
+```
 
 ## Como Rodar o Projeto
 
@@ -75,9 +78,10 @@ Instale as dependências:
    npm install
 Rodar o Servidor de Desenvolvimento
 
-bash
+```bash
 npm run dev
 Acesse http://localhost:3000 para visualizar o projeto em execução.
+```
 
 ## Links Úteis
 
