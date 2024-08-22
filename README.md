@@ -44,7 +44,7 @@ Bem-vindo ao projeto do Grupo Cednet! Este projeto utiliza Next.js para criar um
   - `rural.js` 
 
 - **`styles/`**: Contém os arquivos CSS específicos para as páginas e estilos globais.
-  - `plans.module.css`
+  - `index-plans.module.css`
   - `rural.module.css`
   - `residencial.module.css`
   - `corporativo.module.css`
