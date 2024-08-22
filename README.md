@@ -61,10 +61,10 @@ Bem-vindo ao projeto do Grupo Cednet! Este projeto utiliza Next.js para criar um
 Clone o repositório:
 
  ```bash
-Copiar código
 git clone https://github.com/seu-usuario/cednet-residencial.git
 cd cednet-residencial
 
+bash
 Instale as dependências:
 
 
