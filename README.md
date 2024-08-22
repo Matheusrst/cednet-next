@@ -58,9 +58,12 @@ Bem-vindo ao projeto do Grupo Cednet! Este projeto utiliza Next.js para criar um
   - `rural/` (imagens especificas para a página rural)
 
 ## Clonar Repositorio 
+Clone o repositório:
+
 bash
-git clone https://github.com/matheusrst/cednet-residencial.git 
-cd cednet-residencial 
+Copiar código
+git clone https://github.com/seu-usuario/cednet-residencial.git
+cd cednet-residencial
 Instale as dependências:
 
 
