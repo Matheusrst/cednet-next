@@ -64,12 +64,6 @@ Clone o repositório:
 git clone https://github.com/seu-usuario/cednet-residencial.git
 cd cednet-residencial
 ```
-Instale as dependências:
-```bash
-npm install
-# ou
-yarn install
-```
 
 ## Como Rodar o Projeto
 
