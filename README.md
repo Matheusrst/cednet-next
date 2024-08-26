@@ -62,7 +62,7 @@ Clone o repositório:
 
  ```bash
 git clone https://github.com/Matheusrst/cednet-next
-cd cednet-residencial
+cd cednet-next
 ```
 
 ## Como Rodar o Projeto
