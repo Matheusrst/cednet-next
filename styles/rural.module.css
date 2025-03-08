@@ -108,7 +108,7 @@
 
 /* Seção Hero */
 .hero {
-    background-image: url('https://s3-alpha-sig.figma.com/img/ed8e/2c41/7bb4a99d8bbbe53c785fec3baaa22771?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k60EaryKYNo4HE3mLABg1XbvQo42t2azGjZn-eRQHyMyktAyay8~kevDicFPksCebZ61TyyerDZKYJH97uacE-LgGoLzwwVh-TftjllRFwREyOUC2S1vOR13JPy8Faj~2SKIE0WgPFd2E3ybZwDLwzMIN5T6lWldPFZO4vhkvxbV6d0adm4nT9Kd175Bsi2n5sPkNCch6Pf-fJBOMjMutodiWBMP0lA83uyp3XLMILckSLxSwKa0cDqJjJE2rpJZePJHFrf7~4h8dqncygsEzaMMkSq7fiIrGtF0ouKuHlfaIDDUhZpHD7pDQpoLkmB5zwEihIcjJhtuPll-7Q0~PQ__'); /* Define a imagem de fundo para a seção Hero */
+    background-image: url('../public/images/background-images/7bb4a99d8bbbe53c785fec3baaa22771.png'); /* Define a imagem de fundo para a seção Hero */
     background-size: cover; /* Faz com que a imagem de fundo cubra todo o elemento */
     background-position: center; /* Centraliza a imagem de fundo */
     text-align: center; /* Centraliza o texto dentro da seção Hero */
@@ -178,7 +178,7 @@
 
 /* Seção Mission */
 .mission {
-    background-image: url('https://s3-alpha-sig.figma.com/img/b8d1/783c/634258e574618f3b91ef939ca48c9565?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=drWZ0vdNGOq3aCohSflGvqF4DOReLHePYpkb3XzYDcuHemxg2vvN8wbryYtHqYJIgG4My386ifPCmonRdG38x8G8SByTxIIr5ZcdB7KhWnxbnAESpEj34BuglaBe70HHEborZXMtiFskmR-49oxFbetrjIYCroJXCZLRD2wX87jLaX071ftZkga3gBhEvBOfaoQfTEtjYhnZtkBNAXZoB4Qh2wX8DkGRlXX4ZabzGNYBOcI25vlFtA0XtOiP1lJdVgh4KRzxThWCRwD61tgc4FxXiSBavHdPMwUk8oyVZYX5leBcC2ncYNA3bTK9YERrkemuLsn1xLdW3MAVLlPxOw__'); /* Imagem de fundo */
+    background-image: url('../public/images/background-images/634258e574618f3b91ef939ca48c9565.png'); /* Imagem de fundo */
     background-size: cover; /* Cobre todo o elemento */
     background-position: center; /* Centraliza imagem */
     text-align: center; /* Centraliza texto */
@@ -250,7 +250,7 @@
 
 /* Seção Features */
 .features {
-    background-image: url('https://s3-alpha-sig.figma.com/img/5268/3522/eaf924bbec5c121d22599c37c5fd54b8?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UMOAXtY9U0V7x24qQ1mE1GP2IaFx2~ii~UQAo-fE7-Jq2WEL4JXqFHCgYY4GebTaNpiqvPNFMbI5GMaWh~m9lq6ws1aejjO7k9agA3HDAe71Fg3gcdHt4~nTE6QliV1tEKuAq3CCb4vOMz4pUlZj58PTADWxfP97BGORY-zX~xRmNGMLmyM0nqKPFQ-A78pfw3D2ODoiavTFlmArTkVPeMN4KhrSd-8M8OSeS6U22~77L0EBpGid96MiaAUzsV67mV4ptC8slCF9p6gE-4JXRP-XRuhQXMLoFE1vbJR~wReKg-XehuObvqAW6vfZ2KqSQXUcLleX5J313HVavL~QaA__'); /* Imagem de fundo */
+    background-image: url('../public/images/background-images/eaf924bbec5c121d22599c37c5fd54b8.png'); /* Imagem de fundo */
     background-size: cover; /* Cobre todo o elemento */
     background-position: center; /* Centraliza imagem */
     padding: 6.25rem 0; /* Padding vertical */
@@ -288,7 +288,7 @@
 
 /* Seção Plans */
 .plans {
-    background-image: url('https://s3-alpha-sig.figma.com/img/4124/b91d/dfa98935e29ce938e9939c8f38313d4d?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hcDFRDzThuywIfygSe2FiAebsmKUWFOi3K5PGhXu7iA7MJiUELpEKXWtrFUCh3mD5YhRMBlyjY8W64fjsB7B295nRYTD7As048fvbbPsb2c4nJjVelIJ8Hj5j4N5DsRwsBTaWQZ8L3zAI0UoWEWiKMET8c6jwJE4ttht7fPDun5S6VtMnv4wLv7zSMWds79j3Vp0Z57GuFGXHNT9sEpZZWVcMzt0WjQESa1YpTDCCdDA3HYh~8U1O7nQqP~frWzDoaSmxsq76UtBc80PKfi4gKqzHBZvBaReU1SnvZgupsVUY30MnW9e~f5ZFR4rRSY7zD4E3hj8n1qgllg6fOvypQ__');
+    background-image: url('../public/images/background-images/dfa98935e29ce938e9939c8f38313d4d.png');
     padding: 4rem 0; /* Padding vertical */
     text-align: center; /* Centraliza texto */
     padding: 3.75rem 0; /* Adiciona padding vertical à seção Plans */

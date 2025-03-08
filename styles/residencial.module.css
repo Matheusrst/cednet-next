@@ -110,7 +110,7 @@
 /* Estilo da seção herói */
 .heroSection {
     text-align: center; /* Alinha o texto ao centro */
-    background-image: url('https://s3-alpha-sig.figma.com/img/26ae/4ce0/f9cc074fef69a5331bca1e2ffd3f2762?Expires=1724630400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Ro2K5WBQtb-4-I5OllJoAl28AgzqT6K67TYWtZxI2RlY6ig54FdVPjTPIbjBf5HmGHWZQZt0uLZqy4VTmz~Zda--es0ESNNhYVox-bN0CICQp7zP~7WHfisi1~Rylvy0zqfg9nwDzQibGUbeZ6Q7-JViByS5b-bPiOHVwEMs1vugbjU201qLTY2ASnSrvOU-xBajOG6x~Zz907-jpoPPpI9sac5bHsuq1W-eUQDTN~kIr1bIUEis5VE1XL2wsniGxDu1UZtvh8SZ4~9XNRVmBaQ5XkSKFnj~9Vi3jLB4fbwUmtQMUv116BX7BMpRAUk7vtyK7~XD4wNqusrBQgdEPA__'); /* Imagem de fundo */
+    background-image: url('../public/images/background-images/f9cc074fef69a5331bca1e2ffd3f2762.png'); /* Imagem de fundo */
     background-size: cover; /* Faz a imagem cobrir toda a área */
     background-position: center; /* Centraliza a imagem de fundo */
     padding: 6.25rem 0; /* Espaçamento interno vertical */

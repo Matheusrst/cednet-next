@@ -4,7 +4,7 @@
     margin: 0; /* Remove margens padrão */
     padding: 0; /* Remove padding padrão */
     color: #ffffff; /* Define a cor do texto para branco */
-    background-image: url('https://s3-alpha-sig.figma.com/img/50ee/9e86/7759b7d000a5fa0b83a578a32b2f01b7?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W3-s9WdqGEpHYQTfizXIHStw8M0vq4SzCkeqSGwWnd12cl7S-DQOp3IikgpWDiSHXVIgjBus--TbjCe0TnZ9Sg9dj~NEDaiDohaoqIL-wxSg7DuqyjMwmLAomRtIKPoCzOYDIpPnkNMq6kUZi3iG3BlOQhMyvZNs4cm~m5-OFn-K-cMt-8XomOcmJ-nNQRgW~RWGdmJYRjbUrhyiRe6k8KsTpJyHvW00Z02h1xi7QM5K9qCvb676TWP7m4xg2m5baVyPeZ977cIvSZU51poXV2-X9dKS1HDOM1aQyoqhqtrnF0Uil1Hy93ybU0QNIrr8atV6lfwL6IBC69nKcUId0w__'); /* Define uma imagem de fundo para a página */
+    background-image: url('../public/images/background-images/7759b7d000a5fa0b83a578a32b2f01b7.png'); /* Define uma imagem de fundo para a página */
     background-size: cover; /* Faz a imagem de fundo cobrir toda a área visível */
     background-position: center; /* Centraliza a imagem de fundo */
     line-height: 1.6; /* Define a altura da linha para melhorar a legibilidade */
