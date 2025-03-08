@@ -59,7 +59,7 @@ export default function Residencial() {
       <header className={styles.header}>
         <div className={styles.container2}>
           <div className={styles.logo}>
-            <a href="https://grupocednet.com.br/" target="_blank" rel="noopener noreferrer">
+            <a href="\" rel="noopener noreferrer">
               <Image src="/images/logo.png" alt="Logo Cednet" width={180} height={60} />
             </a>
           </div>
@@ -215,7 +215,7 @@ export default function Residencial() {
       <footer className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.footerLinks}>
-            <a href="https://api.whatsapp.com/send?phone=558001001101" target="_blank">Central de Atendimento 0800 1001 101</a>
+          <a href="" rel="noopener noreferrer">Central de Atendimento 0800 1001 101</a>
             <a href="https://grupocednet.com.br/politica-de-privacidade" target="_blank">Políticas de Privacidade</a>
           </div>
           <p>COPYRIGHT © 2024, TODOS OS DIREITOS RESERVADOS. | CNPJ: 01.752.674/0001-54</p>

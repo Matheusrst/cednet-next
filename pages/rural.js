@@ -63,7 +63,7 @@ const Rural = () => {
       <header className={styles.header}>
         <div className={styles.container2}>
           <div className={styles.logo}>
-            <a href="https://grupocednet.com.br/" target="_blank" rel="noopener noreferrer">
+            <a href="\" rel="noopener noreferrer">
               <Image src="/images/logo.png" alt="Logo Cednet" width={180} height={60} /> {/* Logo da empresa */}
             </a>
           </div>
@@ -157,57 +157,49 @@ const Rural = () => {
           <div ref={sliderRef} className="keen-slider"> {/* Slider de planos */}
             <div className="keen-slider__slide">
               <Image src="/images/rural/res-rural-1.webp" alt="combo 1 res" width={270} height={450} /> {/* Imagem do plano 1 */}
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Combo%201?" 
-                 target="_blank" rel="noopener noreferrer" className={styles.planButton}>
+              <a rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
               <Image src="/images/rural/corp-rural1.webp" alt="combo 1 corp" width={250} height={450} /> {/* Imagem do plano 1 Corporativo */}
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Rural%20Corp%201?" 
-                 target="_blank" rel="noopener noreferrer" className={styles.planButton}>
+              <a rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
               <Image src="/images/rural/res-rural-2.webp" alt="combo 2 res" width={250} height={450} /> {/* Imagem do plano 2 */}
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Combo%202?" 
-                 target="_blank" rel="noopener noreferrer" className={styles.planButton}>
+              <a rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
               <Image src="/images/rural/corp-rural2.webp" alt="combo 2 corp" width={250} height={450} /> {/* Imagem do plano 2 Corporativo */}
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Rural%20Corp%202?" 
-                 target="_blank" rel="noopener noreferrer" className={styles.planButton}>
+              <a rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
               <Image src="/images/rural/res-rural-3.webp" alt="combo 3 res" width={250} height={450} /> {/* Imagem do plano 3 */}
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Combo%203?" 
-                 target="_blank" rel="noopener noreferrer" className={styles.planButton}>
+              <a rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
               <Image src="/images/rural/corp-rural3.webp" alt="combo 3 corp" width={250} height={450} /> {/* Imagem do plano 3 Corporativo */}
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Rural%20Corp%203?" 
-                 target="_blank" rel="noopener noreferrer" className={styles.planButton}>
+              <a rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
               <Image src="/images/rural/res-rural-4.webp" alt="combo 4 res" width={270} height={450} /> {/* Imagem do plano 4 */}
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Combo%204?" 
-                 target="_blank" rel="noopener noreferrer" className={styles.planButton}>
+              <a rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
             <div className="keen-slider__slide">
               <Image src="/images/rural/corp-rural4.webp" alt="combo 4 corp" width={270} height={450} /> {/* Imagem do plano 4 Corporativo */}
-              <a href="https://api.whatsapp.com/send?phone=558001001101&text=Ol%C3%A1,%20gostaria%20de%20conhecer%20o%20plano%20Rural%20Corp%204?" 
-                 target="_blank" rel="noopener noreferrer" className={styles.planButton}>
+              <a rel="noopener noreferrer" className={styles.planButton}>
                 Mais Informações
               </a>
             </div>
@@ -218,7 +210,7 @@ const Rural = () => {
       <footer className={styles.footer}>
         <div className={styles.container}>
           <div className={styles.footerLinks}>
-            <a href="https://api.whatsapp.com/send?phone=558001001101" target="_blank" rel="noopener noreferrer">Central de Atendimento 0800 1001 101</a> {/* Link para atendimento via WhatsApp */}
+            <a href="" rel="noopener noreferrer">Central de Atendimento 0800 1001 101</a> {/* Link para atendimento via WhatsApp */}
             <a href="https://grupocednet.com.br/politica-de-privacidade" target="_blank" rel="noopener noreferrer">Políticas de Privacidade</a> {/* Link para a política de privacidade */}
           </div>
           <p>COPYRIGHT © 2024, TODOS OS DIREITOS RESERVADOS. | CNPJ: 01.752.674/0001-54</p> {/* Informações de copyright */}

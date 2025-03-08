@@ -25,7 +25,7 @@ export default function Home() {
           <div className={styles.container}>
             {/* Logo da empresa com link externo */}
             <div className={styles.logo}>
-              <a href="https://grupocednet.com.br/" target="_blank" rel="noopener noreferrer">
+              <a href="\" rel="noopener noreferrer">
                 <Image src="/images/logo.png" alt="Logo Cednet" width={140} height={50} />
               </a>
             </div>
@@ -83,9 +83,7 @@ export default function Home() {
           <div className={styles.container}>
             {/* Links do rodapé, incluindo central de atendimento e políticas de privacidade */}
             <div className={styles.footerLinks}>
-              <a href="https://api.whatsapp.com/send?phone=558001001101" target="_blank" rel="noopener noreferrer">
-                Central de Atendimento 0800 1001 101
-              </a>
+            <a href="" rel="noopener noreferrer">Central de Atendimento 0800 1001 101</a>
               <a href="https://grupocednet.com.br/politica-de-privacidade" target="_blank" rel="noopener noreferrer">
                 Políticas de Privacidade
               </a>
